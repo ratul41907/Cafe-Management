@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1684670295 source:c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<windows.h>
+	<dos.h>
+
