@@ -131,17 +131,72 @@ void menu()
        float mprice;
        float lprice;
      };
-     struct list a1;
+     struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
 
 
 
 
 
      a1.sl=01;
-     strcpy(a1.item,"Mocha");
+     strcpy(a1.item,"MOCHA");
      a1.sprice=210.0;
      a1.mprice=330.0;
      a1.lprice=380.0;
+
+     a2.sl=02;
+     strcpy(a2.item,"WHITE MOCHA");
+     a2.sprice=260.0;
+     a2.mprice=360.0;
+     a2.lprice=400.0;
+
+     a3.sl=03;
+     strcpy(a3.item,"FLAVORED lATTE");
+     a3.sprice=210.0;
+     a3.mprice=330.0;
+     a3.lprice=380.0;
+
+     a4.sl=04;
+     strcpy(a4.item,"CAFE LATTE");
+     a4.sprice=165.0;
+     a4.mprice=280.0;
+     a4.lprice=330.0;
+
+     a5.sl=05;
+     strcpy(a5.item,"HOT CHOCOLATE");
+     a5.sprice=250.0;
+     a5.mprice=360.0;
+     a5.lprice=400.0;
+
+     a6.sl=06;
+     strcpy(a6.item,"CHAI LATTE");
+     a6.sprice=200.0;
+     a6.mprice=330.0;
+     a6.lprice=400.0;
+
+
+     a7.sl=07;
+     strcpy(a7.item,"AMERICANO");
+     a7.sprice=135.0;
+     a7.mprice=250.0;
+     a7.lprice=310.0;
+
+     a8.sl=8;
+     strcpy(a8.item,"ESPRESSO");
+     a8.sprice=115.0;
+     a8.mprice=135.0;
+     a8.lprice=160.0;
+
+     a9.sl=9;
+     strcpy(a9.item,"CAPPUCINO");
+     a9.sprice=210.0;
+     a9.mprice=330.0;
+     a9.lprice=380.0;
+
+     a10.sl=10;
+     strcpy(a10.item,"SMOOTHE");
+     a10.sprice=150.0;
+     a10.mprice=200.0;
+     a10.lprice=240.0;
      printf("\n\n               ----------------------------------------------------------------------------------------------\n");
 
 
