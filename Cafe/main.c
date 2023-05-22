@@ -9,6 +9,7 @@ int main()
     screen();
 
     welcome();
+    menubar();
     menu();
     getch();
 }
@@ -74,7 +75,7 @@ void welcome(int uid,int pass,int i) //welcome screen
         printf("\n\n                                                         Logged in Successfully\n");
          sleep(1);
         system("cls");
-        menu();
+        menubar();
     }
      else
      {
@@ -98,9 +99,25 @@ void welcome(int uid,int pass,int i) //welcome screen
       }
      }
 }
+
+void menubar()
+{
+
+       int n;
+    printf("\t\t\t                ______________________________________________\n\n");
+    printf("\t\t\t               |                 Nac Cafe                     |\n ");
+    printf("\t\t\t               |______________________________________________|");
+
+   printf("\n1.Menu");
+   printf("\n2.Calculate Bill");
+   printf("\n3.Exit");
+
+
+
+}
 void menu()
 {
-      system("cls"); //used system cls as it showed output twice,deleted 1st output
+
 
     printf("\t\t\t                ______________________________________________\n\n");
     printf("\t\t\t               |                 Nac Cafe                     |\n ");
