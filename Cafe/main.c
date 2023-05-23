@@ -5,16 +5,13 @@
 #include<dos.h>
 void screen();
 void welcome(int uid,int pass);
-void menubar();
-void menu();
 void bill();
+void menubar();
 int main()
 {
     int uid,pass,n;
     screen();
-
     welcome(uid,pass);
-
     getch();
 
 }
@@ -105,10 +102,10 @@ void welcome(int uid,int pass) //welcome screen
      }
 }
 
-void menubar(int n)
+void menubar()
 {
 
-
+      int n;
     printf("\t\t\t                ______________________________________________\n\n");
     printf("\t\t\t               |                 Nac Cafe                     |\n ");
     printf("\t\t\t               |______________________________________________|");
@@ -121,25 +118,34 @@ void menubar(int n)
         printf("\n                       3.Exit");
         printf("\n                    Enter Here : ");
             scanf("%d",&n);
-          system("cls");
+
              //  while(n!=1 |\ n!=2 || n!=3)
 
 
                if(n==1)
                {
+                  system("cls");
                    menu();
+
 
                }
                else if(n==2)
                {
+                   system("cls");
                    bill();
                }
                else if(n==3)
                {
                    exit(1);
                }
-               while(n!=1 || n!=2 || n!=3)
+
+               else
                 {
+                     while(n!=1 || n!=2 || n!=3)
+                     {
+
+
+
        printf("\t\t\t                ______________________________________________\n\n");
        printf("\t\t\t               |                 Nac Cafe                     |\n ");
        printf("\t\t\t               |______________________________________________|");
@@ -151,8 +157,10 @@ void menubar(int n)
         printf("\n                       3.Exit");
         printf("\n                    Enter Here : ");
             scanf("%d",&n);
-            system("cls");
+
                 }
+                }
+
 
 
 }
