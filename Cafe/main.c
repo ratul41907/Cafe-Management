@@ -3,15 +3,17 @@
 #include<conio.h>
 #include<windows.h>
 #include<dos.h>
+
 void screen();
-void welcome(int uid,int pass);
+void welcome(char uname[10],int pass);
 void bill();
 void menubar();
 int main()
 {
-    int uid,pass,n;
+    char uname[10];
+    int pass,n;
     screen();
-    welcome(uid,pass);
+    welcome(uname,pass);
     getch();
 
 }
@@ -57,7 +59,7 @@ void screen() //splash screen
 
 
 }
-void welcome(int uid,int pass) //welcome screen
+void welcome(char uname[10],int pass) //welcome screen
 {
 
     printf("\t\t\t                ______________________________________________\n\n");
@@ -66,13 +68,14 @@ void welcome(int uid,int pass) //welcome screen
 
 
     printf("\n\n                                           \t\t User ID : ");
-    scanf("%d",&uid);
+    gets(uname );
+
     printf("\n");
 
     printf("                     \t\t\t\t\t Password : ");
     scanf(" %d",&pass);
 
-      if(uid==2311539 && pass==123)
+      if((strcmp(uname,"ratul419")==0) && (pass==123))
     {
         printf("\n\n                                                         Logged in Successfully\n");
          sleep(1);
@@ -81,7 +84,7 @@ void welcome(int uid,int pass) //welcome screen
     }
      else
      {
-        while(uid!=231539 && pass!=123)
+        while((strcmp(uname,"ratul419")!=0) && (pass!=123))
       {
     printf("\t\t\t\t\t\tPlease Enter A Proper User Name or Password\n");
     sleep(2);
@@ -92,7 +95,8 @@ void welcome(int uid,int pass) //welcome screen
     printf("\t\t\t               |______________________________________________|");
 
     printf("                                            \t\t\t\t\t\t User ID : ");
-    scanf("%d",&uid);
+    gets(uname);
+
     printf("\n");
 
     printf("                     \t\t\t\t\t Password : ");
