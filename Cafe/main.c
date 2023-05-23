@@ -5,16 +5,16 @@
 #include<dos.h>
 void screen();
 void welcome(int uid,int pass);
-//void menubar();
+void menubar();
 void menu();
+void bill();
 int main()
 {
     int uid,pass,n;
     screen();
 
     welcome(uid,pass);
-    menubar(n);
-    menu();
+
     getch();
 
 }
@@ -105,10 +105,10 @@ void welcome(int uid,int pass) //welcome screen
      }
 }
 
-void menubar()
+void menubar(int n)
 {
-         system("cls");
-     int n;
+
+
     printf("\t\t\t                ______________________________________________\n\n");
     printf("\t\t\t               |                 Nac Cafe                     |\n ");
     printf("\t\t\t               |______________________________________________|");
@@ -121,11 +121,38 @@ void menubar()
         printf("\n                       3.Exit");
         printf("\n                    Enter Here : ");
             scanf("%d",&n);
-                    switch(n)
-                     {
-                     case 1:
-                        menu();
-                     }
+          system("cls");
+             //  while(n!=1 |\ n!=2 || n!=3)
+
+
+               if(n==1)
+               {
+                   menu();
+
+               }
+               else if(n==2)
+               {
+                   bill();
+               }
+               else if(n==3)
+               {
+                   exit(1);
+               }
+               while(n!=1 || n!=2 || n!=3)
+                {
+       printf("\t\t\t                ______________________________________________\n\n");
+       printf("\t\t\t               |                 Nac Cafe                     |\n ");
+       printf("\t\t\t               |______________________________________________|");
+
+     printf("\n\n\n\n                 Please Enter A Number Given Below\n");
+
+        printf("\n                       1.Menu");
+        printf("\n                       2.Calculate Bill");
+        printf("\n                       3.Exit");
+        printf("\n                    Enter Here : ");
+            scanf("%d",&n);
+            system("cls");
+                }
 
 
 }
@@ -209,9 +236,8 @@ void menu()
      a10.mprice=200.0;
      a10.lprice=240.0;
 
-     sleep(1);
-     system("cls");
-     system("cls");
+
+
      printf("\t\t\t                ______________________________________________\n\n");
      printf("\t\t\t               |                 Nac Cafe                     |\n ");
      printf("\t\t\t               |______________________________________________|");
