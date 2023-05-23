@@ -13,7 +13,7 @@ int main()
     screen();
 
     welcome(uid,pass);
-    menubar();
+    menubar(n);
     menu();
     getch();
 
@@ -105,10 +105,10 @@ void welcome(int uid,int pass) //welcome screen
      }
 }
 
-void menubar(int n)
+void menubar()
 {
-
-
+         system("cls");
+     int n;
     printf("\t\t\t                ______________________________________________\n\n");
     printf("\t\t\t               |                 Nac Cafe                     |\n ");
     printf("\t\t\t               |______________________________________________|");
@@ -116,31 +116,20 @@ void menubar(int n)
 
    printf("\n\n\n\n                 Please Enter A Number Given Below\n");
 
-   printf("\n                       1.Menu");
-   printf("\n                       2.Calculate Bill");
-   printf("\n                       3.Exit");
-
-      printf("\n                    Enter Here : ");
-
-      scanf("%d",&n);
-
-             if(n==1)
-             {
-
-                menu();
-             }
-             system("cls");//problem
+        printf("\n                       1.Menu");
+        printf("\n                       2.Calculate Bill");
+        printf("\n                       3.Exit");
+        printf("\n                    Enter Here : ");
+            scanf("%d",&n);
+                    switch(n)
+                     {
+                     case 1:
+                        menu();
+                     }
 
 
 }
-void menu()
-{
-
-    printf("\t\t\t                ______________________________________________\n\n");
-    printf("\t\t\t               |                 Nac Cafe                     |\n ");
-    printf("\t\t\t               |______________________________________________|");
-
-     struct list
+    struct list
      {
        int sl;
        char item[20];
@@ -148,6 +137,11 @@ void menu()
        float mprice;
        float lprice;
      };
+void menu()
+{
+
+
+
      struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
 
 
@@ -214,6 +208,13 @@ void menu()
      a10.sprice=150.0;
      a10.mprice=200.0;
      a10.lprice=240.0;
+
+     sleep(1);
+     system("cls");
+     system("cls");
+     printf("\t\t\t                ______________________________________________\n\n");
+     printf("\t\t\t               |                 Nac Cafe                     |\n ");
+     printf("\t\t\t               |______________________________________________|");
      printf("\n\n               ----------------------------------------------------------------------------------------------\n");
 
 
@@ -241,7 +242,10 @@ void menu()
      printf("               ----------------------------------------------------------------------------------------------\n");
 
 }
-
+void bill()
+{
+    printf("id");
+}
 
 
 
