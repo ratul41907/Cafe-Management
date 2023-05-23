@@ -3,15 +3,20 @@
 #include<conio.h>
 #include<windows.h>
 #include<dos.h>
+void screen();
+void welcome(int uid,int pass);
+//void menubar();
+void menu();
 int main()
 {
-
+    int uid,pass,n;
     screen();
 
-    welcome();
+    welcome(uid,pass);
     menubar();
     menu();
     getch();
+
 }
 void screen() //splash screen
 {
@@ -55,7 +60,7 @@ void screen() //splash screen
 
 
 }
-void welcome(int uid,int pass,int i) //welcome screen
+void welcome(int uid,int pass) //welcome screen
 {
 
     printf("\t\t\t                ______________________________________________\n\n");
@@ -100,24 +105,36 @@ void welcome(int uid,int pass,int i) //welcome screen
      }
 }
 
-void menubar()
+void menubar(int n)
 {
 
-       int n;
+
     printf("\t\t\t                ______________________________________________\n\n");
     printf("\t\t\t               |                 Nac Cafe                     |\n ");
     printf("\t\t\t               |______________________________________________|");
 
-   printf("\n1.Menu");
-   printf("\n2.Calculate Bill");
-   printf("\n3.Exit");
 
+   printf("\n\n\n\n                 Please Enter A Number Given Below\n");
+
+   printf("\n                       1.Menu");
+   printf("\n                       2.Calculate Bill");
+   printf("\n                       3.Exit");
+
+      printf("\n                    Enter Here : ");
+
+      scanf("%d",&n);
+
+             if(n==1)
+             {
+
+                menu();
+             }
+             system("cls");//problem
 
 
 }
 void menu()
 {
-
 
     printf("\t\t\t                ______________________________________________\n\n");
     printf("\t\t\t               |                 Nac Cafe                     |\n ");
@@ -222,6 +239,7 @@ void menu()
      printf("               ----------------------------------------------------------------------------------------------\n");
      printf("               |   %d   |  %s                                                 | %.2f|  %.2f| %.2f|\n",a10.sl,a10.item,a10.sprice,a10.mprice,a10.lprice);
      printf("               ----------------------------------------------------------------------------------------------\n");
+
 }
 
 
