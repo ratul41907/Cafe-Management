@@ -94,6 +94,7 @@ void welcome(char uname[10],int pass) //welcome screen
     printf("\t\t\t               |                 Nac Cafe                     |\n ");
     printf("\t\t\t               |______________________________________________|");
 
+    fflush(stdin);
     printf("                                            \t\t\t\t\t\t User ID : ");
     gets(uname);
 
@@ -101,6 +102,14 @@ void welcome(char uname[10],int pass) //welcome screen
 
     printf("                     \t\t\t\t\t Password : ");
     scanf(" %d",&pass);
+
+       if((strcmp(uname,"ratul419")==0) && (pass==123))
+    {
+        printf("\n\n                                                         Logged in Successfully\n");
+         sleep(1);
+        system("cls");
+        menubar();
+    }
 
       }
      }
