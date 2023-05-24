@@ -188,7 +188,7 @@ void menubar()
 void menu()
 {
 
-
+    int num;
 
      struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
 
@@ -252,7 +252,7 @@ void menu()
      a9.lprice=380.0;
 
      a10.sl=10;
-     strcpy(a10.item,"SMOOTHE");
+     strcpy(a10.item,"SMOOTHIE");
      a10.sprice=150.0;
      a10.mprice=200.0;
      a10.lprice=240.0;
@@ -288,10 +288,62 @@ void menu()
      printf("               |   %d   |  %s                                                 | %.2f|  %.2f| %.2f|\n",a10.sl,a10.item,a10.sprice,a10.mprice,a10.lprice);
      printf("               ----------------------------------------------------------------------------------------------\n");
 
+               printf("\n                  1.Go Back");
+               printf("\n                  2.Exit");
+               printf("\n                  Enter A Number : ");
+
+
+     scanf("%d",&num);
+
+     switch(num)          // to exit or go back from menu
+     {
+     case 1:
+       {
+        system("cls");
+        menubar();
+        break;
+       }
+     case 2:
+        {
+            exit(1);
+        }
+     default:
+        {
+            while(num!=1 || num!=2)
+            {
+              system("cls");
+
+     printf("\t\t\t                ______________________________________________\n\n");
+     printf("\t\t\t               |                 Nac Cafe                     |\n ");
+     printf("\t\t\t               |______________________________________________|");
+
+    printf("\n                      Please Enter Any Number Between 1 and 2 : \n\n");
+    printf("\n                                     1.Go Back");
+    printf("\n                                     2.Exit");
+    printf("\n                                     Enter A Number : ");
+            scanf("%d",&num);
+             switch(num)
+             {
+                 case 1:
+       {
+        system("cls");
+        menubar();
+        break;
+       }
+     case 2:
+        {
+            exit(1);
+        }
+             }
+
+            }
+        }
+     }
+
 }
 void bill()
 {
-    printf("id");
+    menu();
 }
 
 
