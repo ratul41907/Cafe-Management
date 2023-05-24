@@ -6,14 +6,15 @@
 
 void screen();
 void welcome(char uname[10],int pass);
-void bill();
 void menubar();
+void bill();
 int main()
 {
     char uname[10];
     int pass,n;
     screen();
     welcome(uname,pass);
+    bill();
     getch();
 
 }
@@ -343,7 +344,20 @@ void menu()
 }
 void bill()
 {
-    menu();
+
+    int s;
+    printf("                                                        CASH MEMO                       \n");
+
+    printf("\n\n               ----------------------------------------------------------------------------------------------\n");
+
+
+     printf("               | Sl NO |                      Item Name                            | Small | Medium | Large | \n     ");
+     printf("          ----------------------------------------------------------------------------------------------\n");
+     printf("                SL:  ");
+     scanf("%d",&s);
+     printf(" |");
+
+
 }
 
 
