@@ -14,7 +14,6 @@ int main()
     int pass,n;
     screen();
     welcome(uname,pass);
-    bill();
     getch();
 
 }
@@ -342,28 +341,52 @@ void menu()
      }
 
 }
+
 void bill()
 {
 
-    int s;
-
+   int s,q;
+    float sum,totalsum;
+    sum=0;
+    char size[20];
      printf("\t\t\t                ______________________________________________\n\n");
      printf("\t\t\t               |                 Nac Cafe                     |\n ");
      printf("\t\t\t               |______________________________________________|");
 
     printf("\n\n\n                                                        CASH MEMO                       \n");
 
-    printf("\n\n               ----------------------------------------------------------------------------------------------\n");
+    printf("\n\n             ------------------------------------------------------------------------------------------------------\n");
 
 
-     printf("               | Sl NO |                      Item Name                            | Small | Medium | Large | \n     ");
-     printf("          ----------------------------------------------------------------------------------------------\n");
-     printf("               | SL:  ");
+     printf("             | Sl NO |        Item Name           |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|Bill|Final Bill(f/F)|\n     ");
+     printf("        ------------------------------------------------------------------------------------------------------\n");
+     printf("              SL:  ");
      scanf("%d",&s);
-     printf("%d|");
+     system("cls");//deletes output and update aftwerwards
+     printf("\t\t\t                ______________________________________________\n\n");
+     printf("\t\t\t               |                 Nac Cafe                     |\n ");
+     printf("\t\t\t               |______________________________________________|");
+
+    printf("\n\n\n                                                        CASH MEMO                       \n");
+
+     printf("\n\n             ------------------------------------------------------------------------------------------------------\n");
 
 
+     printf("             | Sl NO |        Item Name           |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|Bill|Final Bill(f/F)|\n     ");
+     printf("        ------------------------------------------------------------------------------------------------------\n");
+
+    while((strcmp("f",size)!=0)||(strcmp("F",size)!=0))
+    {
+
+    if(s==1)
+    {
+     printf("             | SL:%d  |   MOCHA                  ",s);
+    }
+    break;
+    }
 }
+
+
 
 
 
