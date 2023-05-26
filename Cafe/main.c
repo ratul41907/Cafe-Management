@@ -421,7 +421,7 @@ void bill()
                printf("\n\n\n                             2.Enter s/m/l for small,medium & large for Order No %d: ",i);
                scanf(" %c",&size);
 
-               while(size!='S' || size!='M' || size!='L' || size!='s' || size!='m' || size!='l')
+              while(size!='S' && size!='M' && size!='L' && size!='s' && size!='m' && size!='l')
                {
                           system("cls");
                           printf("\t\t\t                ______________________________________________\n\n");
