@@ -345,15 +345,16 @@ void menu()
 void bill()
 {
 
-   int s,q;
+    struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
+    int s,q,item,i;
     float sum,totalsum;
     sum=0;
-    char size[20];
+    char size[20],name[50];
      printf("\t\t\t                ______________________________________________\n\n");
      printf("\t\t\t               |                 Nac Cafe                     |\n ");
      printf("\t\t\t               |______________________________________________|");
 
-    printf("\n\n\n                                                        CASH MEMO                       \n");
+    /*printf("\n\n\n                                                        CASH MEMO                       \n");
 
     printf("\n\n             ------------------------------------------------------------------------------------------------------\n");
 
@@ -375,15 +376,27 @@ void bill()
      printf("             | Sl NO |        Item Name           |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|Bill|Final Bill(f/F)|\n     ");
      printf("        ------------------------------------------------------------------------------------------------------\n");
 
-    while((strcmp("f",size)!=0)||(strcmp("F",size)!=0))
-    {
 
-    if(s==1)
-    {
-     printf("             | SL:%d  |   MOCHA                  ",s);
-    }
-    break;
-    }
+    */
+       printf("\n\n\n                                         Customer's Name : ");
+       fflush(stdin);
+       gets(name);
+
+       printf("\n\n                                         Enter Number of Items : ");
+       scanf(" %d",&item);
+       system("cls");
+
+     printf("\t\t\t                ______________________________________________\n\n");
+     printf("\t\t\t               |                 Nac Cafe                     |\n ");
+     printf("\t\t\t               |______________________________________________|");
+
+          for(i=1;i<=item;i++)
+          {
+
+          }
+
+
+
 }
 
 
