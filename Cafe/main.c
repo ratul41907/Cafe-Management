@@ -346,10 +346,10 @@ void bill()
 {
 
     struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
-    int s,q,item,i;
+    int sel,q,item,i;
     float sum,totalsum;
     sum=0;
-    char size[20],name[50];
+    char size,name[50];
      printf("\t\t\t                ______________________________________________\n\n");
      printf("\t\t\t               |                 Nac Cafe                     |\n ");
      printf("\t\t\t               |______________________________________________|");
@@ -359,7 +359,7 @@ void bill()
     printf("\n\n             ------------------------------------------------------------------------------------------------------\n");
 
 
-     printf("             | Sl NO |        Item Name           |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|Bill|Final Bill(f/F)|\n     ");
+     printf("             | Sl NO |          Item Name             |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|  Bill  |\n     ");
      printf("        ------------------------------------------------------------------------------------------------------\n");
      printf("              SL:  ");
      scanf("%d",&s);
@@ -373,7 +373,7 @@ void bill()
      printf("\n\n             ------------------------------------------------------------------------------------------------------\n");
 
 
-     printf("             | Sl NO |        Item Name           |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|Bill|Final Bill(f/F)|\n     ");
+     printf("             | Sl NO |          Item Name             |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|  Bill  |\n     ");
      printf("        ------------------------------------------------------------------------------------------------------\n");
 
 
@@ -390,12 +390,73 @@ void bill()
      printf("\t\t\t               |                 Nac Cafe                     |\n ");
      printf("\t\t\t               |______________________________________________|");
 
-          for(i=1;i<=item;i++)
+
+          while(item<=0)
           {
+              system("cls");
+        printf("\t\t\t                ______________________________________________\n\n");
+        printf("\t\t\t               |                 Nac Cafe                     |\n ");
+        printf("\t\t\t               |______________________________________________|");
+
+              printf("\n\n                                              Enter Valid Number\n");
+              sleep(2);
+              system("cls");
+        printf("\t\t\t                ______________________________________________\n\n");
+        printf("\t\t\t               |                 Nac Cafe                     |\n ");
+        printf("\t\t\t               |______________________________________________|");
+
+              printf("\n\n                                           Enter Number of Items : ");
+              scanf(" %d",&item);
+              system("cls");
 
           }
 
+          if(item>0)
+          {
 
+            for(i=1;i<=item;i++) //one should choose 2 items if he want to take same item within different quantity
+            {
+               printf("\n\n\n                             1.Enter Sl for Order No %d: ",i);
+               scanf("%d",&sel);
+               printf("\n\n\n                             2.Enter s/m/l for small,medium & large for Order No %d: ",i);
+               scanf(" %c",&size);
+
+               while(size!='S' || size!='M' || size!='L' || size!='s' || size!='m' || size!='l')
+               {
+                          system("cls");
+                          printf("\t\t\t                ______________________________________________\n\n");
+                          printf("\t\t\t               |                 Nac Cafe                     |\n ");
+                          printf("\t\t\t               |______________________________________________|");
+
+               printf("\n\n                                         Please Enter Valid Keyword\n\n");
+               printf("\n\n\n                             2.Enter s/m/l for small,medium & large for Order No %d: ",i);
+               scanf(" %c",&size);
+
+
+               }
+
+               printf("\n\n\n                             3.Enter Quantity for Order No %d: ",i);
+               scanf(" %d",&q);
+
+
+
+
+               while(q<=0)
+               {
+                   printf("\n\n\n                               Invalid Quantity\n");
+                   system("cls");
+            printf("\t\t\t                ______________________________________________\n\n");
+            printf("\t\t\t               |                 Nac Cafe                     |\n ");
+            printf("\t\t\t               |______________________________________________|");
+
+                printf("\n\n\n                             3.Enter Quantity for Order No %d: ",i);
+               scanf(" %d",&q);
+
+               }
+
+            }
+
+          }
 
 }
 
