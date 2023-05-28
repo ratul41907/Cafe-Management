@@ -1,8 +1,20 @@
 # depslib dependency file v1.0
-1685097981 source:c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\main.c
+1685259338 source:c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
 	<windows.h>
 	<dos.h>
+	"screen.h"
+	"welcome.h"
+	"menubar.h"
+	"bill.h"
+
+1685258997 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\screen.h
+
+1685259721 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\welcome.h
+
+1685259242 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\menubar.h
+
+1685259338 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\bill.h
 
