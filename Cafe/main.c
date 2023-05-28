@@ -3,9 +3,9 @@
 #include<conio.h>
 #include<windows.h>
 #include<dos.h>
-#include "screen.h"
-#include "welcome.h"
-#include "menubar.h"
+#include "splash.h"
+#include "login.h"
+#include "menu.h"
 #include "bill.h"
 void screen();
 void welcome(char uname[10],int pass);
