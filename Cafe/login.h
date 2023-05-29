@@ -24,7 +24,7 @@ void welcome(char uname[10],int pass) //welcome screen
     }
      else
      {
-        while((strcmp(uname,"ratul419")!=0) && (pass!=123))
+        while((strcmp(uname,"ratul419")!=0) || (pass!=123))
       {
     printf("\t\t\t\t\t\tPlease Enter A Proper User Name or Password\n");
     sleep(2);
@@ -35,7 +35,7 @@ void welcome(char uname[10],int pass) //welcome screen
     printf("\t\t\t               |______________________________________________|");
 
     fflush(stdin);
-    printf("                                            \t\t\t\t\t\t User ID : ");
+    printf("\n\n                                           \t\t User ID : ");
     gets(uname);
 
     printf("\n");
