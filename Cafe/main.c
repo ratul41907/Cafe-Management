@@ -5,6 +5,7 @@
 #include<dos.h>
 #include "splash.h"
 #include "login.h"
+#include "menubar.h"
 #include "menu.h"
 #include "bill.h"
 void screen();
@@ -18,6 +19,7 @@ int main()
     int pass,n;
     screen();
     welcome(uname,pass);
+
     getch();
 
 }

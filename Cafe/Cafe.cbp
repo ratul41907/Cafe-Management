@@ -32,12 +32,12 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="bill.h" />
+		<Unit filename="login.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="menubar.h" />
-		<Unit filename="screen.h" />
-		<Unit filename="welcome.h" />
+		<Unit filename="menu.h" />
+		<Unit filename="splash.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

@@ -1,66 +1,4 @@
-void menubar()
-{
-
-      int n;
-    printf("\t\t\t                ______________________________________________\n\n");
-    printf("\t\t\t               |                 Nac Cafe                     |\n ");
-    printf("\t\t\t               |______________________________________________|");
-
-
-   printf("\n\n\n\n                 Please Enter A Number Given Below\n");
-
-        printf("\n                       1.Menu");
-        printf("\n                       2.Calculate Bill");
-        printf("\n                       3.Exit");
-        printf("\n                    Enter Here : ");
-            scanf("%d",&n);
-
-             //  while(n!=1 |\ n!=2 || n!=3)
-
-
-               if(n==1)
-               {
-                  system("cls");
-                   menu();
-
-
-               }
-               else if(n==2)
-               {
-                   system("cls");
-                   bill();
-               }
-               else if(n==3)
-               {
-                   exit(1);
-               }
-
-               else
-                {
-                     while(n!=1 || n!=2 || n!=3)
-                     {
-
-
-
-       printf("\t\t\t                ______________________________________________\n\n");
-       printf("\t\t\t               |                 Nac Cafe                     |\n ");
-       printf("\t\t\t               |______________________________________________|");
-
-     printf("\n\n\n\n                 Please Enter A Number Given Below\n");
-
-        printf("\n                       1.Menu");
-        printf("\n                       2.Calculate Bill");
-        printf("\n                       3.Exit");
-        printf("\n                    Enter Here : ");
-            scanf("%d",&n);
-
-                }
-                }
-
-
-
-}
-    struct list
+struct list
      {
        int sl;
        char item[20];
@@ -68,6 +6,8 @@ void menubar()
        float mprice;
        float lprice;
      };
+     struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
+//void menubar(void);
 void menu()
 {
 
@@ -168,7 +108,7 @@ void menu()
      printf("               ----------------------------------------------------------------------------------------------\n");
      printf("               |   %d   |   %s                                               | %.2f|  %.2f| %.2f|\n",a9.sl,a9.item,a9.sprice,a9.mprice,a9.lprice);
      printf("               ----------------------------------------------------------------------------------------------\n");
-     printf("               |   %d   |  %s                                                | %.2f|  %.2f| %.2f|\n",a10.sl,a10.item,a10.sprice,a10.mprice,a10.lprice);
+     printf("               |   %d   |  %s                                                 | %.2f|  %.2f| %.2f|\n",a10.sl,a10.item,a10.sprice,a10.mprice,a10.lprice);
      printf("               ----------------------------------------------------------------------------------------------\n");
 
                printf("\n                  1.Go Back");
@@ -224,4 +164,3 @@ void menu()
      }
 
 }
-
