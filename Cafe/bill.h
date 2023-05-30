@@ -3,7 +3,7 @@ void bill()
 
     struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
     int sel,q,item,i;
-    float sum,totalsum,price;
+    float sum,totalsum,price,mul;
     sum=0;
     char size,name[50],iname[50];
      printf("\t\t\t                ______________________________________________\n\n");
@@ -132,16 +132,28 @@ void bill()
                 iname[50]="MOCHA";
                 if(size=='s' || size== 's')
                 {
-                    item = 210.0;
+                    price = 210.0;
                 }
                 else if(size=='m' || size=='M')
                 {
-                    item = 330.0;
+                    price = 330.0;
                 }
                 else if(size=='l' || size=='L')
                 {
-                    item =380.0;
+                    price =380.0;
                 }
+                 system("cls");//deletes output and update aftwerwards
+     printf("\t\t\t                ______________________________________________\n\n");
+     printf("\t\t\t               |                 Nac Cafe                     |\n ");
+     printf("\t\t\t               |______________________________________________|");
+ printf("\n\n\n                                                        CASH MEMO                       \n");
+
+     printf("\n\n     -----------------------------------------------------------------------------------------------------------\n");
+
+
+     printf("             | Sl NO |          Item Name             |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|       Bill       |\n     ");
+     printf("        ----------------------------------------------------------------------------------------------------------\n");
+     printf("             | %d    | M0CHA                             |           %c                    |   %d   |%d X %f=  %f      |",sel,iname,size,q,q,price,q*price);
                 break;
             }
             case 2:
