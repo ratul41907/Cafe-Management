@@ -142,19 +142,7 @@ void bill()
                 {
                     price =380.0;
                 }
-                 system("cls");//deletes output and update aftwerwards
-     printf("\t\t\t                ______________________________________________\n\n");
-     printf("\t\t\t               |                 Nac Cafe                     |\n ");
-     printf("\t\t\t               |______________________________________________|");
- printf("\n\n\n                                                        CASH MEMO                       \n");
-
-     printf("\n\n     -----------------------------------------------------------------------------------------------------------\n");
-
-
-     printf("             | Sl NO |          Item Name             |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|       Bill       |\n     ");
-     printf("        ----------------------------------------------------------------------------------------------------------\n");
-     printf("             | %d    | M0CHA                             |           %c                    |   %d   |%d X %f=  %f      |",sel,iname,size,q,q,price,q*price);
-                break;
+         break;
             }
             case 2:
             {
