@@ -1,7 +1,14 @@
 void bill()
 {
 
-    struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
+    struct sold
+    {
+      float price;
+    };
+    struct sold s,m,l;
+    s.price=210.0;
+    m.price=330.0;
+    l.price=380;
     int sel,q,item,i;
     float sum,totalsum,price,mul;
     sum=0;
