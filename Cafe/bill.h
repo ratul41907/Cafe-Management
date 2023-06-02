@@ -78,8 +78,9 @@ void bill()
           {
 
              //one should choose 2 items if he want to take same item within different quantity
-            for(i=1;i<=item;i++)
-            {
+           for(i=1;i<=item;i++)
+
+       {
 
 
                printf("\n\n\n                             1.Enter Sl for Order No %d: ",i);
@@ -135,10 +136,16 @@ void bill()
 
 
           }
+          }
           switch(sel)
           {
+           for(i=1;i<=item;i++)
+                {
           case 1:
             {
+
+
+
                  printf("\n\n             ------------------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------------------\n");
@@ -153,8 +160,10 @@ void bill()
                     printf("             |%d  |       MOCHA           |           |    %c     |          |   %d   |%dX%.2f =%.2f  |\n", sel, size, q, q, m.price, q * m.price);
                     printf("             ------------------------------------------------------------------------------------------------------\n");
                 }
-
+                }
             }
+
+
             case 2:
             {
                 iname[50]="WHITE MOCHA";
@@ -313,7 +322,7 @@ void bill()
                 printf("\n\n                             Provide Valid Valuen");
 
           }
-          }
+
 
 }
 
