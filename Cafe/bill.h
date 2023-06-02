@@ -10,7 +10,7 @@ void bill()
     m.price=330.0;
     l.price=380;
     int sel,q,item,i;
-    float sum,totalsum,price,mul;
+    float bill=0,sum,totalsum,price,mul;
     sum=0;
     char size,name[50],iname[50];
      printf("\t\t\t                ______________________________________________\n\n");
@@ -77,8 +77,11 @@ void bill()
           if(item>0)
           {
 
-            for(i=1;i<=item;i++) //one should choose 2 items if he want to take same item within different quantity
+             //one should choose 2 items if he want to take same item within different quantity
+            for(i=1;i<=item;i++)
             {
+
+
                printf("\n\n\n                             1.Enter Sl for Order No %d: ",i);
                scanf("%d",&sel);
                while(sel<1 || sel>10)
@@ -129,27 +132,28 @@ void bill()
 
                }
 
-            }
+
 
           }
           switch(sel)
           {
           case 1:
             {
-                iname[50]="MOCHA";
-                if(size=='s' || size== 's')
-                {
-                    price = 210.0;
+                 printf("\n\n             ------------------------------------------------------------------------------------------------------\n");
+                printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
+                printf("             ------------------------------------------------------------------------------------------------------\n");
+                if (size == 'S' || size == 's') {
+                    bill=q*s.price;
+                    printf("             ------------------------------------------------------------------------------------------------------\n");
+                    printf("             |%d  |       MOCHA           |    %c     |           |          |   %d   |%dX%.2f =%.2f  |\n", sel, size, q, q, s.price,bill);
+                    bill=0;
+                    printf("             ------------------------------------------------------------------------------------------------------\n");
+                } else if (size == 'M' || size == 'm') {
+                    printf("             ------------------------------------------------------------------------------------------------------\n");
+                    printf("             |%d  |       MOCHA           |           |    %c     |          |   %d   |%dX%.2f =%.2f  |\n", sel, size, q, q, m.price, q * m.price);
+                    printf("             ------------------------------------------------------------------------------------------------------\n");
                 }
-                else if(size=='m' || size=='M')
-                {
-                    price = 330.0;
-                }
-                else if(size=='l' || size=='L')
-                {
-                    price =380.0;
-                }
-         break;
+
             }
             case 2:
             {
@@ -308,6 +312,7 @@ void bill()
              default:
                 printf("\n\n                             Provide Valid Valuen");
 
+          }
           }
 
 }
