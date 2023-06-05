@@ -11,8 +11,16 @@ struct list
        float mprice;
        float lprice;
      };
-     struct list a1 ={01,"MOCHA",210,330,380};
-     struct list a2,a3,a4,a5,a6,a7,a8,a9,a10;
+     struct list a1 = {01,"MOCHA",210.0,330.0,380.0};
+     struct list a2 = {02,"WHITE MOCHA",260.0,360.0,400.0};
+     struct list a3 = {03,"FLAVORED LATTE",210.0,330.0,380.0};
+     struct list a4 = {04,"CAFE LATTE",165.0,280.0,330.0};
+     struct list a5 = {05,"HOT CHOCOLATE",250.0,360.0,400.0};
+     struct list a6 = {06,"CHAI LATTE",200.0,330.0,400.0};
+     struct list a7 = {07,"AMERICANO",135.0,250.0,310.0};
+     struct list a8 = {8,"ESPRESSO",115.0,135.0,160.0};
+     struct list a9 = {9,"CAPPUCINO",210.0,330.0,380.0};
+     struct list a10 = {10,"SMOOTHIE",150.0,200.0,240.0};
 
     // struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
 
@@ -25,7 +33,7 @@ struct list
      a1.sprice=210.0;
      a1.mprice=330.0;
      a1.lprice=380.0;
-*/
+
      a2.sl=02;
      strcpy(a2.item,"WHITE MOCHA");
      a2.sprice=260.0;
@@ -81,7 +89,7 @@ struct list
      a10.mprice=200.0;
      a10.lprice=240.0;
 
-
+*/
 
      printf("\t\t\t                ______________________________________________\n\n");
      printf("\t\t\t               |                 Nac Cafe                     |\n ");
@@ -109,7 +117,7 @@ struct list
      printf("               ----------------------------------------------------------------------------------------------\n");
      printf("               |   %d   |   %s                                               | %.2f|  %.2f| %.2f|\n",a9.sl,a9.item,a9.sprice,a9.mprice,a9.lprice);
      printf("               ----------------------------------------------------------------------------------------------\n");
-     printf("               |   %d   |  %s                                                 | %.2f|  %.2f| %.2f|\n",a10.sl,a10.item,a10.sprice,a10.mprice,a10.lprice);
+     printf("               |   %d  |   %s                                                | %.2f|  %.2f| %.2f|\n",a10.sl,a10.item,a10.sprice,a10.mprice,a10.lprice);
      printf("               ----------------------------------------------------------------------------------------------\n");
 
                printf("\n                  1.Go Back");
@@ -163,5 +171,5 @@ struct list
             }
         }
      }
-       //bill(a1.sl,a1.item,a1.sprice,a1.mprice,a1.lprice);
+       bill(a1.sl,a1.item,a1.sprice,a1.mprice,a1.lprice);
 }
