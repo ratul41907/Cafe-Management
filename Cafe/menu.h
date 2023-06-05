@@ -1,3 +1,8 @@
+//void menubar(void);
+void menu()
+{
+
+    int num;
 struct list
      {
        int sl;
@@ -6,25 +11,21 @@ struct list
        float mprice;
        float lprice;
      };
-     struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
-//void menubar(void);
-void menu()
-{
+     struct list a1 ={01,"MOCHA",210,330,380};
+     struct list a2,a3,a4,a5,a6,a7,a8,a9,a10;
 
-    int num;
-
-     struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
+    // struct list a1,a2,a3,a4,a5,a6,a7,a8,a9,a10;
 
 
 
 
 
-     a1.sl=01;
+    /* a1.sl=01;
      strcpy(a1.item,"MOCHA");
      a1.sprice=210.0;
      a1.mprice=330.0;
      a1.lprice=380.0;
-
+*/
      a2.sl=02;
      strcpy(a2.item,"WHITE MOCHA");
      a2.sprice=260.0;
@@ -162,5 +163,5 @@ void menu()
             }
         }
      }
-
+       //bill(a1.sl,a1.item,a1.sprice,a1.mprice,a1.lprice);
 }
