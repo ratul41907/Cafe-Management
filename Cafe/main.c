@@ -16,6 +16,10 @@ void menubar();
 int main()
 {
 
+    FILE *file;
+    file = fopen("cse115","w");
+    fclose(file);
+
     char uname[10];
     int pass,n;
     screen();
