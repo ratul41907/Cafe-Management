@@ -17,7 +17,7 @@ int main()
 {
 
     FILE *file;
-    file = fopen("cse115","w");
+    file = fopen("cse115.txt","w");
     fclose(file);
 
     char uname[10];

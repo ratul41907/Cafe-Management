@@ -70,7 +70,7 @@ void bill(FILE *file)
             scanf(" %d", &q);
            }
 
-        file = fopen("cse115","r");
+        file = fopen("cse115.txt","w");
         switch (sel)
         {
 
@@ -80,7 +80,7 @@ void bill(FILE *file)
                   l.price = 380.0;
 
                 strcpy(name,"MOCHA");
-                fscanf(file,"MOCHA");
+                fprintf(file,name);
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
@@ -495,36 +495,16 @@ void bill(FILE *file)
                 break;
 fclose(file);
 }
+
 }
 
                   printf("\n\n\t\tDo You Wanna Have Another Cup Of A Coffee :-),Enter y for yes,n for no : ");
                   scanf(" %c",&yes);
                   fflush(stdin);
 
-                  if(yes=='y' || yes=='Y')
-                  {
-                    system("cls");
-    printf("\t\t\t                ______________________________________________\n\n");
-    printf("\t\t\t               |                 Nac Cafe                     |\n ");
-    printf("\t\t\t               |______________________________________________|\n");
-
-                  printf("\n\n                                         Enter Number of Items : ");
-    scanf("%d", &item);
-    fflush(stdin);
-
-    while (item <= 0)
-        {
-        printf("\n\n                                              Enter Valid Number\n");
-        printf("\n\n                                         Enter Number of Items : ");
-        scanf("%d", &item);
-        }
-           system("cls");
-
-     printf("\t\t\t                ______________________________________________\n\n");
-     printf("\t\t\t               |                 Nac Cafe                     |\n ");
-     printf("\t\t\t               |______________________________________________|");
-
-    for (i=1; i<=item; i++)
+         if(yes=='y' || yes=='Y')
+         {
+                for (i = 1; i <= item; i++)
         {
         printf("\n\n\n                             1. Enter Sl for Order No %d: ",i);
         scanf("%d", &sel);
@@ -556,7 +536,7 @@ fclose(file);
             scanf(" %d", &q);
            }
 
-
+        file = fopen("cse115.txt","w");
         switch (sel)
         {
 
@@ -566,6 +546,7 @@ fclose(file);
                   l.price = 380.0;
 
                 strcpy(name,"MOCHA");
+                fprintf(file,name);
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
@@ -577,6 +558,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                     }
                  else if (size == 'M' || size == 'm')
                 {
@@ -586,6 +568,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                  else if (size == 'L' || size == 'l')
                 {
@@ -595,6 +578,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                 break;
 
@@ -616,6 +600,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                     }
                  else if (size == 'M' || size == 'm')
                 {
@@ -625,6 +610,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                  else if (size == 'L' || size == 'l')
                 {
@@ -634,6 +620,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                 break;
 
@@ -655,6 +642,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                     }
                  else if (size == 'M' || size == 'm')
                 {
@@ -664,6 +652,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                  else if (size == 'L' || size == 'l')
                 {
@@ -673,6 +662,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                 break;
 
@@ -694,6 +684,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                     }
                  else if (size == 'M' || size == 'm')
                 {
@@ -703,6 +694,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                  else if (size == 'L' || size == 'l')
                 {
@@ -712,6 +704,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                 break;
 
@@ -733,6 +726,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                     }
                  else if (size == 'M' || size == 'm')
                 {
@@ -742,6 +736,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                  else if (size == 'L' || size == 'l')
                 {
@@ -751,6 +746,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                 break;
 
@@ -772,6 +768,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                     }
                  else if (size == 'M' || size == 'm')
                 {
@@ -781,6 +778,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                  else if (size == 'L' || size == 'l')
                 {
@@ -790,6 +788,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                 break;
 
@@ -811,6 +810,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                     }
                  else if (size == 'M' || size == 'm')
                 {
@@ -820,6 +820,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                  else if (size == 'L' || size == 'l')
                 {
@@ -829,6 +830,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                 break;
 
@@ -850,6 +852,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                     }
                  else if (size == 'M' || size == 'm')
                 {
@@ -859,6 +862,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                  else if (size == 'L' || size == 'l')
                 {
@@ -868,6 +872,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                 break;
 
@@ -889,6 +894,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                     }
                  else if (size == 'M' || size == 'm')
                 {
@@ -898,6 +904,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                  else if (size == 'L' || size == 'l')
                 {
@@ -907,6 +914,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                 break;
 
@@ -928,6 +936,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                     }
                  else if (size == 'M' || size == 'm')
                 {
@@ -937,6 +946,7 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                  else if (size == 'L' || size == 'l')
                 {
@@ -946,14 +956,23 @@ fclose(file);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
+                    fflush(stdout);
                 }
                 break;
+fclose(file);
+}
 
 }
-}
-                  }
+         }
+         else if(yes=='n' || yes=='N')
+         {
+             exit(1);
+         }
 
-                  printf("\n\n\n Grand Total : %.2f\n",sum);
+
+
+
+
 
 }
 
