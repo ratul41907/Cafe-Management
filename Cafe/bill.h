@@ -493,7 +493,7 @@ void bill()
      printf("\t\t\t               |                 Nac Cafe                     |\n ");
      printf("\t\t\t               |______________________________________________|");
 
-    for (i = 1; i <= item; i++)
+    for (i=1; i<=item; i++)
         {
         printf("\n\n\n                             1. Enter Sl for Order No %d: ",i);
         scanf("%d", &sel);

@@ -11,7 +11,7 @@
 void screen();
 void welcome(char uname[10],int pass);
 void menubar();
-void bill(struct list *a1);
+
 int main()
 {
 
