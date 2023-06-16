@@ -6,7 +6,7 @@ struct sold
 
 
 
-void bill()
+void bill(FILE *file)
 {
      struct sold s,m,l;
 
@@ -70,7 +70,7 @@ void bill()
             scanf(" %d", &q);
            }
 
-
+        file = fopen("cse115","r");
         switch (sel)
         {
 
@@ -80,6 +80,7 @@ void bill()
                   l.price = 380.0;
 
                 strcpy(name,"MOCHA");
+                fscanf(file,"MOCHA");
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
@@ -492,7 +493,7 @@ void bill()
                     fflush(stdout);
                 }
                 break;
-
+fclose(file);
 }
 }
 
@@ -951,6 +952,7 @@ void bill()
 }
 }
                   }
+
                   printf("\n\n\n Grand Total : %.2f\n",sum);
 
 }

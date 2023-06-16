@@ -25,6 +25,7 @@ int main()
     screen();
     welcome(uname,&pass);
 
+    bill(file);
 
     getch();
 
