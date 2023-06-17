@@ -40,6 +40,7 @@ void bill(FILE *file)
 
     for (i = 1; i <= item; i++)
         {
+
         printf("\n\n\n                             1. Enter Sl for Order No %d: ",i);
         scanf("%d", &sel);
 
@@ -70,7 +71,7 @@ void bill(FILE *file)
             scanf(" %d", &q);
            }
 
-        file = fopen("cse115.txt","w");
+          file = fopen("cse115.txt","a");
         switch (sel)
         {
 
@@ -80,6 +81,7 @@ void bill(FILE *file)
                   l.price = 380.0;
 
                 strcpy(name,"MOCHA");
+                fprintf(file,"\n\t\t\t");
                 fprintf(file,name);
 
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
@@ -495,7 +497,7 @@ void bill(FILE *file)
                     fflush(stdout);
                 }
                 break;
-fclose(file);
+    fclose(file);
 }
 
 }
@@ -538,7 +540,7 @@ fclose(file);
             scanf(" %d", &q);
            }
 
-        file = fopen("cse115.txt","w");
+        file = fopen("cse115.txt","a");
         switch (sel)
         {
 
@@ -965,13 +967,14 @@ fclose(file);
 fclose(file);
 }
 
+
 }
          }
+
          else if(yes=='n' || yes=='N')
          {
              exit(1);
          }
-
 
 
 
