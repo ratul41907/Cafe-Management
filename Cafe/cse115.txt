@@ -1,2 +1,13 @@
+Customer Name     |      Item          | Quantity |    Bill   |              
+--------------------------------------------------------------------------------------------------------	
 
-			MOCHA
+	         	
+			
+			
+           
+Zaman          MOCHA
+Arafat             MOCHA             60.000000
+Kazi             MOCHA             20.00
+Kazi             MOCHA             4840.00
+Arafat                    MOCHA                   7          1470.00
+Arafat                        MOCHA                       1              210.00
