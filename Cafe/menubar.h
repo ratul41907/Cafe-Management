@@ -18,7 +18,7 @@ void menubar()
              //  while(n!=1 |\ n!=2 || n!=3)
 
 
-              switch (n)
+              switch(n)
               {
 
         case 1:
