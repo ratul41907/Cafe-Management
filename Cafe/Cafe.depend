@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1686931741 source:c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\main.c
+1686969596 source:c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -11,6 +11,7 @@
 	"menubar.h"
 	"menu.h"
 	"bill.h"
+	"menu1.h"
 
 1685258997 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\screen.h
 
@@ -18,11 +19,17 @@
 
 1686907863 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\menubar.h
 
-1686932888 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\bill.h
+1686969264 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\bill.h
 
 1685339694 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\splash.h
 
 1686896165 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\login.h
 
 1686907035 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\menu.h
+
+1686968073 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\memo.h
+
+1686968053 source:c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\memo.c
+
+1686969498 c:\users\user\onedrive\desktop\cafe management cse 115\cafe-management\cafe-management\cafe\menu1.h
 

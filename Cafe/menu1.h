@@ -1,0 +1,5 @@
+void memo()
+{
+    printf("yudfdu");
+}
+

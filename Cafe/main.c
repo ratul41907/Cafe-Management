@@ -9,10 +9,11 @@
 #include "menubar.h"
 #include "menu.h"
 #include "bill.h"
+#include "menu1.h"
 void screen();
 void welcome(char uname[10],int *pass);
 void menubar();
-
+void memo();
 int main()
 {
 
@@ -20,13 +21,13 @@ int main()
     file = fopen("cse115.txt","w");
     fclose(file);
 
-    char uname[10];
+    char uname[10],name[50];
     int pass,n;
     screen();
     welcome(uname,&pass);
 
     bill(file);
-
+    memo();
     getch();
 
 }
