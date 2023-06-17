@@ -86,7 +86,7 @@ void bill(FILE *file)
 
                 fprintf(file,"                        ");
                 fprintf(file,name);
-                fprintf(file,"                                 ");
+                fprintf(file,"                                ");
                 fprintf(file,"%d",q);
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
