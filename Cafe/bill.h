@@ -799,6 +799,11 @@ void bill(FILE *file)
 
 
                 strcpy(name,"FLAVORED LATTE");
+                fprintf(file,"                        ");
+                fprintf(file,name);
+                fprintf(file,"                               ");
+                fprintf(file,"%d",q);
+
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
@@ -850,6 +855,11 @@ void bill(FILE *file)
 
 
                 strcpy(name,"CAFE LATTE");
+                fprintf(file,"                        ");
+                fprintf(file,name);
+                fprintf(file,"                               ");
+                fprintf(file,"%d",q);
+
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
@@ -901,6 +911,11 @@ void bill(FILE *file)
 
 
                 strcpy(name,"HOT CHOCOLATE");
+                fprintf(file,"                        ");
+                fprintf(file,name);
+                fprintf(file,"                               ");
+                fprintf(file,"%d",q);
+
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
@@ -952,6 +967,11 @@ void bill(FILE *file)
 
 
                 strcpy(name,"CHAI LATTE");
+                fprintf(file,"                        ");
+                fprintf(file,name);
+                fprintf(file,"                               ");
+                fprintf(file,"%d",q);
+
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
@@ -1003,6 +1023,11 @@ void bill(FILE *file)
 
 
                 strcpy(name,"AMERICANO");
+                fprintf(file,"                        ");
+                fprintf(file,name);
+                fprintf(file,"                               ");
+                fprintf(file,"%d",q);
+
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
@@ -1054,6 +1079,11 @@ void bill(FILE *file)
 
 
                 strcpy(name,"ESPRESSO");
+                fprintf(file,"                        ");
+                fprintf(file,name);
+                fprintf(file,"                               ");
+                fprintf(file,"%d",q);
+
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
@@ -1105,6 +1135,11 @@ void bill(FILE *file)
 
 
                 strcpy(name,"CAPUCCINO");
+                fprintf(file,"                        ");
+                fprintf(file,name);
+                fprintf(file,"                               ");
+                fprintf(file,"%d",q);
+
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
@@ -1156,6 +1191,11 @@ void bill(FILE *file)
 
 
                 strcpy(name,"SMOOTHIE");
+                fprintf(file,"                        ");
+                fprintf(file,name);
+                fprintf(file,"                               ");
+                fprintf(file,"%d",q);
+
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
