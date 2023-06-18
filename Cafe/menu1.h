@@ -1,5 +1,9 @@
-void memo()
+void memo(char *yes)
 {
-    printf("yudfdu");
+     FILE *file;
+     bill(file);
 }
+
+
+
 

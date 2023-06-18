@@ -12,8 +12,9 @@
 #include "menu1.h"
 void screen();
 void welcome(char uname[10],int *pass);
+void bill(FILE *file);
 void menubar();
-void memo();
+void memo(char *yes);
 int main()
 {
 
@@ -26,8 +27,9 @@ int main()
     screen();
     welcome(uname,&pass);
 
-    bill(file);
-    memo();
+
+
+    memo(file);
     getch();
 
 }

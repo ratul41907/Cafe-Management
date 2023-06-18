@@ -1,26 +1,3 @@
 |  Customer Name      |            Item           |            Quantity         |         Size          |           Bill           |              
 ---------------------------------------------------------------------------------------------------------------------------------	
 
-
-Arafat                        CHAI LATTE                             2                              l            800.00
-Arafat                        CAFE LATTE                             2                              l            660.00
-Arafat                        MOCHA                                  2                              l            760.00
-Arafat                        WHITE MOCHA                            1                              m            360.00
-Arafat                        FLAVORED LATTE                         2                              s            420.00
-Arafat                        CAFE LATTE                             1                              l            330.00
-Arafat                        HOT CHOCOLATE                          3                              l            1200.00
-Arafat                        CHAI LATTE                             2                              s            400.00
-Arafat                        AMERICANO                              3                              l            930.00
-Arafat                        ESPRESSO                               3                              m            405.00
-Arafat                        CAPUCCINO                              5                              l            1900.00
-Arafat                        SMOOTHIE                               2                              l            480.00
-zara                        MOCHA                                   3                              s            630.00
-zara                        WHITE MOCHA                            3                              l            1200.00
-zara                        FLAVORED LATTE                         2                              m            660.00
-zara                        CAFE LATTE                             1                              s            165.00
-zara                        HOT CHOCOLATE                          2                              l            800.00
-zara                        CHAI LATTE                             4                              m            1320.00
-zara                        AMERICANO                              1                              l            310.00
-zara                        ESPRESSO                               2                              m            270.00
-zara                        CAPUCCINO                              2                              l            760.00
-zara                        SMOOTHIE                               3                              l            720.00
