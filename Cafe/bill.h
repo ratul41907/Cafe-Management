@@ -673,6 +673,9 @@ void bill(FILE *file)
            }
 
         file = fopen("cse115.txt","a");
+        fprintf(file,"\n");
+        fputs(cname,file);
+
         switch (sel)
         {
 
@@ -682,13 +685,21 @@ void bill(FILE *file)
                   l.price = 380.0;
 
                 strcpy(name,"MOCHA");
+                fprintf(file,"                        ");
                 fprintf(file,name);
+                fprintf(file,"                               ");
+                fprintf(file,"%d",q);
+
+
                 printf("\n\n             ------------------------------------------------------------------------------------------\n");
                 printf("             | Sl |      Item Name        |Small(s/S)|Medium(m/M)|Large(l/L)|Quantity|      Bill      |\n");
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
                     bill=q * s.price;
+                    fprintf(file,"                              %c",size);
+                    fprintf(file,"            %.2f",bill);
+
                     printf("             ------------------------------------------------------------------------------------------\n");
                     printf("             |%d  |       %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s.price,bill);
                     sum = sum + bill;
@@ -700,6 +711,9 @@ void bill(FILE *file)
                  else if (size == 'M' || size == 'm')
                 {
                     bill=q * m.price;
+                    fprintf(file,"                              %c",size);
+                    fprintf(file,"            %.2f",bill);
+
                     printf("             ------------------------------------------------------------------------------------------\n");
                     printf("             |%d  |       %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,m.price,bill);
                     sum = sum + bill;
@@ -710,6 +724,9 @@ void bill(FILE *file)
                  else if (size == 'L' || size == 'l')
                 {
                     bill=q * l.price;
+                    fprintf(file,"                              %c",size);
+                    fprintf(file,"            %.2f",bill);
+
                     printf("             ------------------------------------------------------------------------------------------\n");
                     printf("             |%d  |       %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,l.price,bill);
                     sum = sum + bill;
