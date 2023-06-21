@@ -183,11 +183,11 @@ void bill(FILE *file)
                     fflush(stdout);
                 }
                 break;
-/*
+
            case 3:
-                  s.price = 210.0;
-                  m.price = 330.0;
-                  l.price = 380.0;
+                  s[0].price = 210.0;
+                  s[1].price = 330.0;
+                  s[2].price = 380.0;
 
 
                 strcpy(name,"FLAVORED LATTE");
@@ -202,12 +202,12 @@ void bill(FILE *file)
                 if (size == 'S' || size == 's')
                     {
 
-                    bill=q * s.price;
+                    bill=q * s[0].price;
 
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s.price,bill);
+                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[0].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -215,12 +215,12 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    bill=q * m.price;
+                    bill=q * s[1].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,m.price,bill);
+                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[1].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -228,12 +228,12 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    bill=q * l.price;
+                    bill=q * s[2].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,l.price,bill);
+                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[2].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -242,9 +242,9 @@ void bill(FILE *file)
                 break;
 
            case 4:
-                  s.price = 165.0;
-                  m.price = 280.0;
-                  l.price = 330.0;
+                  s[0].price = 165.0;
+                  s[1].price = 280.0;
+                  s[2].price = 330.0;
 
 
                 strcpy(name,"CAFE LATTE");
@@ -258,12 +258,12 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    bill=q * s.price;
+                    bill=q * s[0].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s.price,bill);
+                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[0].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -271,12 +271,12 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    bill=q * m.price;
+                    bill=q * s[1].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,m.price,bill);
+                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[1].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -284,12 +284,12 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    bill=q * l.price;
+                    bill=q * s[2].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,l.price,bill);
+                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[2].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -298,9 +298,9 @@ void bill(FILE *file)
                 break;
 
            case 5:
-                  s.price = 260.0;
-                  m.price = 360.0;
-                  l.price = 400.0;
+                  s[0].price = 260.0;
+                  s[1].price = 360.0;
+                  s[2].price = 400.0;
 
 
                 strcpy(name,"HOT CHOCOLATE");
@@ -314,12 +314,12 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    bill=q * s.price;
+                    bill=q * s[0].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s.price,bill);
+                    printf("             |%d  |  %s         |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[0].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -327,12 +327,12 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    bill=q * m.price;
+                    bill=q * s[1].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,m.price,bill);
+                    printf("             |%d  |  %s         |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[1].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -340,12 +340,12 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    bill=q * l.price;
+                    bill=q * s[2].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,l.price,bill);
+                    printf("             |%d  |  %s         |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[2].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -354,9 +354,9 @@ void bill(FILE *file)
                 break;
 
            case 6:
-                  s.price = 200.0;
-                  m.price = 330.0;
-                  l.price = 400.0;
+                  s[0].price = 200.0;
+                  s[1].price = 330.0;
+                  s[2].price = 400.0;
 
 
                 strcpy(name,"CHAI LATTE");
@@ -370,12 +370,12 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    bill=q * s.price;
+                    bill=q * s[0].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s.price,bill);
+                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[0].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -383,12 +383,12 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    bill=q * m.price;
+                    bill=q * s[1].price;
 
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,m.price,bill);
+                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[1].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -396,12 +396,12 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    bill=q * l.price;
+                    bill=q * s[2].price;
 
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,l.price,bill);
+                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[2].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -410,9 +410,9 @@ void bill(FILE *file)
                 break;
 
            case 7:
-                  s.price = 135.0;
-                  m.price = 250.0;
-                  l.price = 310.0;
+                  s[0].price = 135.0;
+                  s[1].price = 250.0;
+                  s[2].price = 310.0;
 
 
                 strcpy(name,"AMERICANO");
@@ -426,12 +426,12 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    bill=q * s.price;
+                    bill=q * s[0].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s.price,bill);
+                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[0].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -439,12 +439,12 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    bill=q * m.price;
+                    bill=q * s[1].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,m.price,bill);
+                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[1].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -452,12 +452,12 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    bill=q * l.price;
+                    bill=q * s[2].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,l.price,bill);
+                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[2].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -466,9 +466,9 @@ void bill(FILE *file)
                 break;
 
            case 8:
-                  s.price = 115.0;
-                  m.price = 135.0;
-                  l.price = 160.0;
+                  s[0].price = 115.0;
+                  s[1].price = 135.0;
+                  s[2].price = 160.0;
 
 
                 strcpy(name,"ESPRESSO");
@@ -482,9 +482,9 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    bill=q * s.price;
+                    bill=q * s[0].price;
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s.price,bill);
+                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[0].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -492,12 +492,12 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    bill=q * m.price;
+                    bill=q * s[1].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,m.price,bill);
+                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[1].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -505,12 +505,12 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    bill=q * l.price;
+                    bill=q * s[2].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,l.price,bill);
+                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[2].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -519,9 +519,9 @@ void bill(FILE *file)
                 break;
 
            case 9:
-                  s.price = 210.0;
-                  m.price = 330.0;
-                  l.price = 380.0;
+                  s[0].price = 210.0;
+                  s[1].price = 330.0;
+                  s[2].price = 380.0;
 
 
                 strcpy(name,"CAPUCCINO");
@@ -535,12 +535,12 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    bill=q * s.price;
+                    bill=q * s[0].price;
 
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s.price,bill);
+                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[0].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -548,12 +548,12 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    bill=q * m.price;
+                    bill=q * s[1].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,m.price,bill);
+                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[1].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -561,12 +561,12 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    bill=q * l.price;
+                    bill=q * s[2].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,l.price,bill);
+                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[2].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -575,9 +575,9 @@ void bill(FILE *file)
                 break;
 
            case 10:
-                  s.price = 150.0;
-                  m.price = 200.0;
-                  l.price = 240.0;
+                  s[0].price = 150.0;
+                  s[1].price = 200.0;
+                  s[2].price = 240.0;
 
 
                 strcpy(name,"SMOOTHIE");
@@ -591,12 +591,12 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    bill=q * s.price;
+                    bill=q * s[0].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s.price,bill);
+                    printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[0].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -604,12 +604,12 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    bill=q * m.price;
+                    bill=q * s[1].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,m.price,bill);
+                    printf("             |%d  |  %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[1].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -617,12 +617,12 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    bill=q * l.price;
+                    bill=q * s[2].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
                     printf("             ------------------------------------------------------------------------------------------\n");
-                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f |\n", sel,name,size,q,q,l.price,bill);
+                    printf("             |%d  |  %s            |           |           |     %c   |   %d    |%dX%.2f =%.2f |\n", sel,name,size,q,q,s[2].price,bill);
                     sum = sum + bill;
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -633,7 +633,7 @@ void bill(FILE *file)
             {
                 printf("\n\t\t\t\t\tEnter Valid Keyword");
                 exit(1);
-            }*/
+            }
     fclose(file);
 }
 

@@ -11,3 +11,4 @@ Arafat                        MOCHA                                2            
 Arafat                        WHITE MOCHA                            4                              s            1040.00
 Arafat                        WHITE MOCHA                            7                              m            360.00
 Arafat                        WHITE MOCHA                            2                              l            400.00
+Arafat                        HOT CHOCOLATE                          3                              l            1200.00
