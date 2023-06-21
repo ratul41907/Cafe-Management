@@ -1,8 +1,7 @@
 //void menubar(void);
-void welcome(char uname[10],int *pass[]) //welcome screen
+void welcome(char uname[10],int *pass) //welcome screen
 {
-    int siz;
-     pass[siz] = sizeof(pass)/sizeof(pass[0]);
+
     printf("\t\t\t                ______________________________________________\n\n");
     printf("\t\t\t               |                 Nac Cafe                     |\n ");
     printf("\t\t\t               |______________________________________________|");
@@ -16,7 +15,7 @@ void welcome(char uname[10],int *pass[]) //welcome screen
     printf("                     \t\t\t\t\t Password : ");
     scanf(" %d",pass);
 
-      if((strcmp(uname,"ratul419")==0) && ((pass[0]==1)&&(pass[1]==2)&&(pass[2]==3)))
+      if((strcmp(uname,"ratul419")==0) && (*pass==123))
     {
         printf("\n\n                                                         Logged in Successfully\n");
          sleep(1);

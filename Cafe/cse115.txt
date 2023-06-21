@@ -1,3 +1,13 @@
 |  Customer Name      |            Item           |            Quantity         |         Size          |           Bill           |              
 ---------------------------------------------------------------------------------------------------------------------------------	
 
+
+Arafat Zaman ratul                        MOCHA                                3                              s            630.00
+arafat                        MOCHA                                4                              s            840.00
+arafat                        CAPUCCINO                              2                              l            760.00
+Arafat                        MOCHA                                3                              s            630.00
+Arafat                        MOCHA                                2                              m            660.00
+Arafat                        MOCHA                                2                              l            760.00
+Arafat                        WHITE MOCHA                            4                              s            1040.00
+Arafat                        WHITE MOCHA                            7                              m            360.00
+Arafat                        WHITE MOCHA                            2                              l            400.00
