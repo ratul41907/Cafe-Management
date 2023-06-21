@@ -11,7 +11,7 @@
 #include "bill.h"
 #include "menu1.h"
 void screen();
-void welcome(char uname[10],int *pass);
+void welcome(char uname[10],int *pass[]);
 void bill(FILE *file);
 void menubar();
 void memo(char *yes);
