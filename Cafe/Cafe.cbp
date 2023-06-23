@@ -36,6 +36,7 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="menu.h" />
 		<Unit filename="menu1.h" />
 		<Unit filename="menubar.h" />
 		<Unit filename="splash.h" />
