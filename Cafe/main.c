@@ -14,7 +14,7 @@ void screen();
 void welcome(char uname[10],int *pass);
 void bill(FILE *file);
 void menubar();
-void memo(char *yes);
+void memo();
 int main()
 {
 

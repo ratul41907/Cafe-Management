@@ -12,7 +12,7 @@ void bill(FILE *file)
 
     int item,i,sel,q;
     float bill=0,sum = 0;
-    char size,name[50],cname[50],yes;
+    char size,name[50],cname[50],yes,code[10];
 
     printf("\t\t\t                ______________________________________________\n\n");
     printf("\t\t\t               |                 Nac Cafe                     |\n ");
@@ -21,6 +21,15 @@ void bill(FILE *file)
      printf("\n\n\n                                         Customer's Name : ");
     fflush(stdin);
     gets(cname);
+
+    printf("\n\n                                         Enter Voucher If You Have Any : ");
+    scanf("%s", &code);
+    if((strcmp("cgpa",code))==0)
+    {
+        printf("\n\n                                        VOUCHER Activated!");
+    }
+    else
+        printf("\n\n                                             SORRY,Voucher Expired");
 
     printf("\n\n                                         Enter Number of Items : ");
     scanf("%d", &item);
@@ -647,7 +656,7 @@ void bill(FILE *file)
          if(yes=='y' || yes=='Y')
          {
                 system("cls");
-                memo(&yes);
+                memo();
 
 
 

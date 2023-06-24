@@ -1,4 +1,4 @@
-void memo(char *yes)
+void memo()
 {
      FILE *file;
      bill(file);
