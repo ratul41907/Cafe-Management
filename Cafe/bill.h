@@ -102,14 +102,7 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                     if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[0].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[0].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -119,38 +112,26 @@ void bill(FILE *file)
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
 
+cashmemo(name,size,q,sum);
+
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[1].price*0.9;
-                     }
-                     else
-                    {
-                    bill=q * s[1].price;
-                    }
-
+                    bill=q *s[1].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
                     printf("             ------------------------------------------------------------------------------------------\n");
                     printf("             |%d  |       %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[1].price,bill);
                     sum = sum + bill;
+                    cashmemo(name,size,q,&bill);
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
+
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[2].price*0.9;
-                     }
-                     else
-                    {
-                    bill=q * s[2].price;
-                    }
-
+                    bill=q *s[2].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -180,15 +161,7 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[0].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[0].price;
-                    }
-
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -200,15 +173,7 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[1].price*0.9;
-                     }
-                     else
-                    {
-                    bill=q * s[1].price;
-                    }
-
+                    bill=s[1].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -220,14 +185,7 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[2].price*0.9;
-                     }
-                     else
-                    {
-                    bill=q * s[2].price;
-                    }
+                    bill=s[2].price;
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
                     printf("             ------------------------------------------------------------------------------------------\n");
@@ -257,14 +215,7 @@ void bill(FILE *file)
                 if (size == 'S' || size == 's')
                     {
 
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[0].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[0].price;
-                    }
 
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
@@ -277,14 +228,7 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[1].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[1].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -297,14 +241,7 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[2].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[2].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -334,14 +271,7 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[0].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[0].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -354,14 +284,7 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[1].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[1].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -374,14 +297,7 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[2].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[2].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -411,14 +327,7 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[0].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[0].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -431,14 +340,7 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[1].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[1].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -451,14 +353,7 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[2].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[2].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -488,14 +383,7 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[0].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[0].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -508,14 +396,7 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                   if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[1].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[1].price;
-                    }
 
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
@@ -528,14 +409,7 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[2].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[2].price;
-                    }
 
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
@@ -565,14 +439,7 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[0].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[0].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -585,14 +452,7 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[1].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[1].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -605,14 +465,7 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                   if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[2].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[2].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -642,14 +495,7 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[0].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[0].price;
-                    }
                     printf("             ------------------------------------------------------------------------------------------\n");
                     printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[0].price,bill);
                     sum = sum + bill;
@@ -659,14 +505,7 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[1].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[1].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -679,14 +518,7 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[2].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[2].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -716,14 +548,7 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[0].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[0].price;
-                    }
 
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
@@ -736,14 +561,7 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[1].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[1].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -756,14 +574,7 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[2].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[2].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -793,14 +604,7 @@ void bill(FILE *file)
                 printf("             ------------------------------------------------------------------------------------------\n");
                 if (size == 'S' || size == 's')
                     {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[0].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[0].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -813,14 +617,7 @@ void bill(FILE *file)
                     }
                  else if (size == 'M' || size == 'm')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[1].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[1].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -833,14 +630,7 @@ void bill(FILE *file)
                 }
                  else if (size == 'L' || size == 'l')
                 {
-                    if((strcmp("cgpa",code))==0)
-                     {
-                    bill=q * s[2].price*0.9;
-                     }
-                     else
-                    {
                     bill=q * s[2].price;
-                    }
                     fprintf(file,"                              %c",size);
                     fprintf(file,"            %.2f",bill);
 
@@ -857,12 +647,13 @@ void bill(FILE *file)
                 printf("\n\t\t\t\t\tEnter Valid Keyword");
                 exit(1);
             }
+
     fclose(file);
 }
 
 }
 
-                  printf("\n\n\t\tDo Wanna Buy Some More Staffs? :-),Enter y for yes,n for no : ");
+                 /* printf("\n\n\t\tDo Wanna Buy Some More Staffs? :-),Enter y for yes,n for no : ");
                   scanf(" %c",&yes);
                   fflush(stdin);
 
@@ -881,12 +672,12 @@ void bill(FILE *file)
 
          else if(yes=='n' || yes=='N')
          {
-             exit(1);
+
          }
 
 
 
-
+*/
 
 }
 

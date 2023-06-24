@@ -10,11 +10,12 @@
 #include "menu.h"
 #include "bill.h"
 #include "menu1.h"
+#include "cashmemo.h"
 void screen();
 void welcome(char uname[10],int *pass);
 void bill(FILE *file);
 void menubar();
-void memo();
+//void memo();
 int main()
 {
 
@@ -29,7 +30,7 @@ int main()
 
 
 
-    memo(file);
+    //memo(file);
     getch();
 
 }
