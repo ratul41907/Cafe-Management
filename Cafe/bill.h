@@ -10,8 +10,8 @@ void bill(FILE *file)
 {
      struct sold s[3];
 
-    int item,i,sel,q;
-    float bill=0,sum = 0;
+    int item,i,sel,q,acc,pas;
+    float bill=0,sum = 0,nitsum=0;
     char size,name[50],cname[50],yes,code[10],date[10];
 
     printf("\t\t\t                ______________________________________________\n\n");
@@ -21,10 +21,7 @@ void bill(FILE *file)
      printf("\n\n\n                                         Customer's Name : ");
     fflush(stdin);
     gets(cname);
-     file = fopen("memo.txt","a");
-     fprintf(file,"Name : %s",cname);
-     fclose(file);
- printf("\n\n\n                                            Enter Date : ");
+     printf("\n\n\n                                            Enter Date : ");
     fflush(stdin);
     gets(date);
      file = fopen("memo.txt","a");
@@ -34,14 +31,6 @@ void bill(FILE *file)
 
      fclose(file);
 
-    printf("\n\n                                         Enter Voucher If You Have Any : ");
-    scanf("%s", &code);
-    if((strcmp("cgpa",code))==0)
-    {
-        printf("\n\n                                        VOUCHER Activated!");
-    }
-    else
-        printf("\n\n                                             SORRY,Voucher Expired");
 
     printf("\n\n                                         Enter Number of Items : ");
     scanf("%d", &item);
@@ -679,31 +668,31 @@ void bill(FILE *file)
 }
 
 }
+            printf("\n\n\t\tTotal Bill : %.2f",sum);
+            Sleep(1800);
 
-                  printf("\n\n\t\tDo Wanna Buy Some More Staffs? :-),Enter y for yes,n for no : ");
-                  scanf(" %c",&yes);
-                  fflush(stdin);
+            system("cls");
+    printf("\t\t\t                ______________________________________________\n\n");
+    printf("\t\t\t               |                 Nac Cafe                     |\n ");
+    printf("\t\t\t               |______________________________________________|\n");
 
+            printf("\n\n                                         Enter Voucher If You Have Any : ");
+    scanf("%s", &code);
+             if(strcmp("cgpa",code)==0)
+             {
+                 printf("\t\t\t\t\t\tVoucher Activated\n");
+                 sum = sum * 0.9;
+                 Sleep(1800);
+                 printf("\t\t\t\tTotal Bill After Discount : %.2f",sum);
+             }
 
-         if(yes=='y' || yes=='Y')
-         {
-                system("cls");
-                memo();
-
-
-
-         }
-
-
-
-
-         else if(yes=='n' || yes=='N')
-         {
-              exit(1);
-         }
+             else
+                printf("\n\nSorry It is expired");
 
 
-
-
+                printf("\n                                     Thanks For Choosing Nac Cafe ^__^");
+                exit(1);
 }
+
+
 

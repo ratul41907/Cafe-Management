@@ -32,13 +32,11 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="bill.h" />
-		<Unit filename="cashmemo.h" />
 		<Unit filename="login.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="menu.h" />
-		<Unit filename="menu1.h" />
 		<Unit filename="menubar.h" />
 		<Unit filename="splash.h" />
 		<Extensions />
