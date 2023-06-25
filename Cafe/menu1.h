@@ -1,9 +1,9 @@
-/*void memo()
+void memo()
 {
      FILE *file;
      bill(file);
 }
-*/
+
 
 
 

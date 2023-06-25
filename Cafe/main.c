@@ -15,12 +15,12 @@ void screen();
 void welcome(char uname[10],int *pass);
 void bill(FILE *file);
 void menubar();
-//void memo();
+void memo();
 int main()
 {
 
     FILE *file;
-    file = fopen("cse115.txt","a");
+    file = fopen("memo.txt","w");
     fclose(file);
 
     char uname[10],name[50];
@@ -30,7 +30,7 @@ int main()
 
 
 
-    //memo(file);
+    memo(file);
     getch();
 
 }

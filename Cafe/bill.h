@@ -12,7 +12,7 @@ void bill(FILE *file)
 
     int item,i,sel,q;
     float bill=0,sum = 0;
-    char size,name[50],cname[50],yes,code[10];
+    char size,name[50],cname[50],yes,code[10],date[10];
 
     printf("\t\t\t                ______________________________________________\n\n");
     printf("\t\t\t               |                 Nac Cafe                     |\n ");
@@ -21,6 +21,18 @@ void bill(FILE *file)
      printf("\n\n\n                                         Customer's Name : ");
     fflush(stdin);
     gets(cname);
+     file = fopen("memo.txt","a");
+     fprintf(file,"Name : %s",cname);
+     fclose(file);
+ printf("\n\n\n                                            Enter Date : ");
+    fflush(stdin);
+    gets(date);
+     file = fopen("memo.txt","a");
+     fprintf(file,"                                                                            Date : %s\n\n\n",date);
+     fprintf(file,"  Item                     |             Quanitiy            |       Size    |       Bill    \n");
+     fprintf(file,"----------------------------------------------------------------------------------------------------\n");
+
+     fclose(file);
 
     printf("\n\n                                         Enter Voucher If You Have Any : ");
     scanf("%s", &code);
@@ -80,9 +92,9 @@ void bill(FILE *file)
             scanf(" %d", &q);
            }
 
-          file = fopen("cse115.txt","a");
-          fprintf(file,"\n");
-          fputs(cname,file);
+          file = fopen("memo.txt","a");
+
+
         switch (sel)
         {
 
@@ -93,7 +105,7 @@ void bill(FILE *file)
 
                 strcpy(name,"MOCHA");
 
-                fprintf(file,"                        ");
+
                 fprintf(file,name);
                 fprintf(file,"                                ");
                 fprintf(file,"%d",q);
@@ -112,7 +124,7 @@ void bill(FILE *file)
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
 
-cashmemo(name,size,q,sum);
+
 
                     }
                  else if (size == 'M' || size == 'm')
@@ -123,7 +135,7 @@ cashmemo(name,size,q,sum);
                     printf("             ------------------------------------------------------------------------------------------\n");
                     printf("             |%d  |       %s            |           |    %c     |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[1].price,bill);
                     sum = sum + bill;
-                    cashmemo(name,size,q,&bill);
+
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
@@ -142,6 +154,7 @@ cashmemo(name,size,q,sum);
                     fflush(stdout);
                 }
 
+               fprintf(file,"\n");
                 break;
 
            case 2:
@@ -151,7 +164,7 @@ cashmemo(name,size,q,sum);
 
 
                 strcpy(name,"WHITE MOCHA");
-                fprintf(file,"                        ");
+
                 fprintf(file,name);
                 fprintf(file,"                            ");
                 fprintf(file,"%d",q);
@@ -195,6 +208,7 @@ cashmemo(name,size,q,sum);
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
                 }
+               fprintf(file,"\n");
                 break;
 
            case 3:
@@ -205,7 +219,7 @@ cashmemo(name,size,q,sum);
 
                 strcpy(name,"FLAVORED LATTE");
 
-                fprintf(file,"                        ");
+
                 fprintf(file,name);
                 fprintf(file,"                         ");
                 fprintf(file,"%d",q);
@@ -252,6 +266,7 @@ cashmemo(name,size,q,sum);
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
                 }
+               fprintf(file,"\n");
                 break;
 
            case 4:
@@ -261,7 +276,7 @@ cashmemo(name,size,q,sum);
 
 
                 strcpy(name,"CAFE LATTE");
-                fprintf(file,"                        ");
+
                 fprintf(file,name);
                 fprintf(file,"                             ");
                 fprintf(file,"%d",q);
@@ -308,6 +323,7 @@ cashmemo(name,size,q,sum);
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
                 }
+               fprintf(file,"\n");
                 break;
 
            case 5:
@@ -317,7 +333,7 @@ cashmemo(name,size,q,sum);
 
 
                 strcpy(name,"HOT CHOCOLATE");
-                fprintf(file,"                        ");
+
                 fprintf(file,name);
                 fprintf(file,"                          ");
                 fprintf(file,"%d",q);
@@ -364,6 +380,7 @@ cashmemo(name,size,q,sum);
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
                 }
+               fprintf(file,"\n");
                 break;
 
            case 6:
@@ -373,7 +390,7 @@ cashmemo(name,size,q,sum);
 
 
                 strcpy(name,"CHAI LATTE");
-                 fprintf(file,"                        ");
+
                 fprintf(file,name);
                 fprintf(file,"                             ");
                 fprintf(file,"%d",q);
@@ -420,6 +437,7 @@ cashmemo(name,size,q,sum);
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
                 }
+                fprintf(file,"\n");
                 break;
 
            case 7:
@@ -429,7 +447,7 @@ cashmemo(name,size,q,sum);
 
 
                 strcpy(name,"AMERICANO");
-                fprintf(file,"                        ");
+
                 fprintf(file,name);
                 fprintf(file,"                              ");
                 fprintf(file,"%d",q);
@@ -476,6 +494,7 @@ cashmemo(name,size,q,sum);
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
                 }
+                fprintf(file,"\n");
                 break;
 
            case 8:
@@ -485,7 +504,7 @@ cashmemo(name,size,q,sum);
 
 
                 strcpy(name,"ESPRESSO");
-                fprintf(file,"                        ");
+
                 fprintf(file,name);
                 fprintf(file,"                               ");
                 fprintf(file,"%d",q);
@@ -496,6 +515,9 @@ cashmemo(name,size,q,sum);
                 if (size == 'S' || size == 's')
                     {
                     bill=q * s[0].price;
+                    fprintf(file,"                              %c",size);
+                    fprintf(file,"            %.2f",bill);
+
                     printf("             ------------------------------------------------------------------------------------------\n");
                     printf("             |%d  |  %s            |    %c     |           |          |   %d    |%dX%.2f =%.2f|\n", sel,name,size,q,q,s[0].price,bill);
                     sum = sum + bill;
@@ -529,6 +551,7 @@ cashmemo(name,size,q,sum);
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
                 }
+                fprintf(file,"\n");
                 break;
 
            case 9:
@@ -538,7 +561,7 @@ cashmemo(name,size,q,sum);
 
 
                 strcpy(name,"CAPUCCINO");
-                fprintf(file,"                        ");
+
                 fprintf(file,name);
                 fprintf(file,"                              ");
                 fprintf(file,"%d",q);
@@ -585,6 +608,7 @@ cashmemo(name,size,q,sum);
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
                 }
+                fprintf(file,"\n");
                 break;
 
            case 10:
@@ -594,7 +618,7 @@ cashmemo(name,size,q,sum);
 
 
                 strcpy(name,"SMOOTHIE");
-                fprintf(file,"                        ");
+
                 fprintf(file,name);
                 fprintf(file,"                               ");
                 fprintf(file,"%d",q);
@@ -627,6 +651,7 @@ cashmemo(name,size,q,sum);
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
+
                 }
                  else if (size == 'L' || size == 'l')
                 {
@@ -640,7 +665,9 @@ cashmemo(name,size,q,sum);
                     bill=0;
                     printf("             ------------------------------------------------------------------------------------------\n");
                     fflush(stdout);
+
                 }
+                fprintf(file,"\n");
                 break;
            default:
             {
@@ -653,7 +680,7 @@ cashmemo(name,size,q,sum);
 
 }
 
-                 /* printf("\n\n\t\tDo Wanna Buy Some More Staffs? :-),Enter y for yes,n for no : ");
+                  printf("\n\n\t\tDo Wanna Buy Some More Staffs? :-),Enter y for yes,n for no : ");
                   scanf(" %c",&yes);
                   fflush(stdin);
 
@@ -672,12 +699,11 @@ cashmemo(name,size,q,sum);
 
          else if(yes=='n' || yes=='N')
          {
-
+              exit(1);
          }
 
 
 
-*/
 
 }
 

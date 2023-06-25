@@ -1,5 +1,8 @@
-void cashmemo(char name1[],char size1,int quant,float *sum)
+void cashmemo(FILE *file)
 {
+    char name[50],size1;
+    int quan;
+    float bill,sum;
     system("cls");
     printf("\t\t\t                ______________________________________________\n\n");
     printf("\t\t\t               |                 Nac Cafe                     |\n ");
@@ -7,5 +10,6 @@ void cashmemo(char name1[],char size1,int quant,float *sum)
     printf("\n\n");
     printf("\t\t\t                                  CASH MEMO                       \n");
      printf("           ------------------------------------------------------------------------------------------\n");
-    printf("             %s                   %c            %d      %f            ",name1,size1,quant,sum);
+     fscanf(file,"%s","%d","%f");
+     printf("                  %s          %d        %f");
 }
