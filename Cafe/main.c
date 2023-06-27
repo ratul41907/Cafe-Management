@@ -9,7 +9,7 @@
 #include "menubar.h"
 #include "menu.h"
 #include "bill.h"
-
+#include "final.h"
 
 void screen();
 void welcome(char uname[10],int *pass);

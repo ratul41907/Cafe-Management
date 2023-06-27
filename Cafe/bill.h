@@ -684,12 +684,20 @@ void bill(FILE *file)
                  sum = sum * 0.9;
                  Sleep(1800);
                  printf("\t\t\t\tTotal Bill After Discount : %.2f",sum);
+                 Sleep(1800);
+                 system("cls");
+                 finale(sum);
              }
 
              else
+               {
+
+
                 printf("\n\nSorry It is expired");
-
-
+                  Sleep(1800);
+                  system("cls");
+                  finale(sum);
+               }
                 printf("\n                                     Thanks For Choosing Nac Cafe ^__^");
                 exit(1);
 }

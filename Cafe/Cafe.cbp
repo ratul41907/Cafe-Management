@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 		</Compiler>
 		<Unit filename="bill.h" />
+		<Unit filename="final.h" />
 		<Unit filename="login.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
